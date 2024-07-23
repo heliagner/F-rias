@@ -16,9 +16,9 @@ const read = () => {
 
 const update = function (){
     read();
-    indice = prompt("Digite o indice da atividade: ")
-    ferias = prompt("Atualize sua atividade: ")
-    index[indice -1] = ferias
+    indice = prompt("Digite o indice da atividade: ");
+    ferias = prompt("Atualize sua atividade: ");
+    index[indice -1] = ferias;
 };
 
 const remove = indice => {
