@@ -1,3 +1,5 @@
+const prompt = require ('prompt-sync')({sigint: true});
+
 const index = [];
 
 function create(ferias){
@@ -12,12 +14,15 @@ const read = () => {
     })
 };
 
-const update = function (ferias, indice){
-    index[indice] = ferias
+const update = function (){
+    read();
+    indice = prompt("Digite o indice da atividade: ")
+    ferias = prompt("Atualize sua atividade: ")
+    index[indice -1] = ferias
 };
 
 const remove = indice => {
-    index.splice(indice, 1);
+    index.splice(indice -1 , 1);
 };
 
 module.exports = {

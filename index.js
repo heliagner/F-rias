@@ -26,13 +26,8 @@ while(true){
 
             break;
         case "3": 
-            indice = prompt("Digite o indice da atividade: ")
-            atividade = prompt("Atualize sua atividade: ")
-
-            index.update({
-                atividade
-            }, 
-            --indice);
+            
+            index.update()
 
             break;
         case "4":
